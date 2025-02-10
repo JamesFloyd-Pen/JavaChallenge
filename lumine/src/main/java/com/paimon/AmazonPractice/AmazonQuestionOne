@@ -1,0 +1,37 @@
+import java.io.*;
+import java.util.*;
+import java.util.stream.*;
+
+class AmazonQuestionOne {
+
+    /*
+     * Complete the 'findNumber' function below.
+     *
+     * The function is expected to return a STRING.
+     * The function accepts INTEGER_ARRAY numbers as parameter.
+     */
+
+    public static String findNumber(List<Integer> numbers) {
+        // Write your code here
+        StringBuilder output = new StringBuilder();
+        List<Integer> pointer = new ArrayList<>(numbers);
+
+        while (pointer.size() > 2) {
+            List<Integer> triangle = new ArrayList<>();
+            for (int i = 0; i < pointer.size() - 1; i++) {
+                triangle.add((pointer.get(i) + pointer.get(i + 1)) % 10);
+            }
+            pointer = triangle;
+        }
+
+        for (Integer sum : pointer) {
+            output.append(sum);
+        }
+        return output.toString();
+    }
+
+    public static void main(String[] args) {
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);
+        System.out.println(findNumber(numbers));
+    }
+}
