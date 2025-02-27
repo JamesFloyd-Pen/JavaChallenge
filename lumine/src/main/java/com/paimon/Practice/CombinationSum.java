@@ -40,10 +40,6 @@ public class CombinationSum {
         current.remove(current.size() -1);
         makeCombination(candidates, target, index +1, output, total, current);
 
-
-
-
-
     }
 
     
