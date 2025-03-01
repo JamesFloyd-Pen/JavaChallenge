@@ -40,6 +40,10 @@ public class CombinationSum {
         current.remove(current.size() -1);
         makeCombination(candidates, target, index +1, output, total, current);
 
+        System.out.println("Current: " + current);
+        System.out.println("Output: " + output);
+        System.out.println("Total: " + total);
+
     }
 
     
