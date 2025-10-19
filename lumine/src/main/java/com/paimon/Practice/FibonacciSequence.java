@@ -3,7 +3,7 @@ package com.paimon.Practice;
 public class FibonacciSequence {
 
     public static void main(String[] args) {
-        int n = 3;
+        int n = 10;
         System.out.println(fib(n));
     }
 
