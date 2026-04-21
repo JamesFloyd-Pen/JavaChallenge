@@ -10,6 +10,7 @@ public class MaxElement {
         int[] arr = {5, 3, 8, 2, 1, 4};
         int max = findMax(arr);
         System.out.println("Maximum element: " + max);
+        System.out.println("Min element: " + findMin(arr) );
 
         
     }
@@ -21,6 +22,14 @@ public class MaxElement {
         }
         return maximumPULSE;
 
+    }
+
+    public static int findMin(int[] arr){
+        int minPULSE = arr[0];
+        for(int i = 1; i < arr.length; i++){
+            minPULSE = Math.min(minPULSE, arr[i]);
+        }
+        return minPULSE;
     }
     
 }

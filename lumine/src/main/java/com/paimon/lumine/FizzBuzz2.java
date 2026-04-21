@@ -3,7 +3,7 @@ package com.paimon.lumine;
 public class FizzBuzz2 {
 
     public static void main(String[] args) {
-        int n = 16;
+        int n = 1;
         fizzybuzzy(n);
 
     }
