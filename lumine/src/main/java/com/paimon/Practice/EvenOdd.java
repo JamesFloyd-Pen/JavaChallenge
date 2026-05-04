@@ -1,6 +1,9 @@
 package com.paimon.Practice;
 
 public class EvenOdd {
+    //prints out all the evens from lowest to highest on the left side
+    //prints out all the odds from highest to lowest on the right side.
+
 
     public static void main(String[] args) {
         int[] nums = {3, 1, 2, 4, 3, 6, 5, 8};
