@@ -47,8 +47,12 @@ class Mona extends Character {
         System.out.println(getName() + " attacks with " + getElement() + " element using " + weapon + "!");
     }
 
-    public void specialSkill() {
-        System.out.println(getName() + " uses her special skill: Mirror Reflection of Doom!");
+    public void elementalSkill() {
+        System.out.println(getName() + " uses her elemental skill: Mirror Reflection of Doom!");
+    }
+
+    public void elementalBurst() {
+        System.out.println(getName() + " unleashes her elemental burst: Stellaris Phantasm!");
     }
 }
 
@@ -69,8 +73,12 @@ class Fischl extends Character {
         System.out.println(getName() + " attacks with " + getElement() + " element using " + weapon + "!");
     }
 
-    public void specialSkill() {
-        System.out.println(getName() + " uses her special skill: Night Raven!");
+    public void elementalSkill() {
+        System.out.println(getName() + " uses her elemental skill: Night Raven!");
+    }
+
+    public void elementalBurst() {
+        System.out.println(getName() + " unleashes her elemental burst: Midnight Phantasmagoria!");
     }
 }
 
@@ -79,9 +87,10 @@ public class Main {
         Mona mona = new Mona(80, "Catalyst");
         Fischl fischl = new Fischl(80, "Bow");
         mona.attack();
-        mona.specialSkill();
+        mona.elementalSkill();
+        mona.elementalBurst();
         fischl.attack();
-        fischl.specialSkill();
-
+        fischl.elementalSkill();
+        fischl.elementalBurst();
     }
 }
